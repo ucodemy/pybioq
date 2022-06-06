@@ -590,9 +590,10 @@
 
   <h1>Ejercicios complementarios</h1>
 
-<p>A continuación encontrará una serie de ejercicios relacionados con la manipulación de <strong>fragmentos nucleotídicos o proteicos</strong> para que siga practicando en Python:</p>
+<p>A continuación encontrará una serie de ejercicios relacionados con la manipulación de <strong>fragmentos nucleotídicos o proteicos</strong> para que siga practicando en Python. </p>
+<p>En el siguiente <a href="../script_ejercicios.py">enlace</a> se puede descargar un script de Python con todos los ejercicios y soluciones que forman esta sección. </p>
 <h3 id="ejercicio-1"><strong>Ejercicio 1</strong></h3>
-<p>Defina dos posibles funciones para conocer el número de nucleótidos o aminoácidos almacenados como una lista.</p>
+<p>Describa dos posibles formas para conocer el número de nucleótidos o aminoácidos almacenados como una lista.</p>
 <p><em>Se propone como lista el siguiente fragmento de ADN: ATGCGCGATCG</em></p>
 <details class="success">
 <summary>Respuesta</summary>
@@ -605,16 +606,18 @@
 <span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">segmento_DNA</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">]</span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">segmento_DNA</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">]</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">def</span> <span class="nf">longitud_cadena</span> <span class="p">(</span><span class="n">segmento_DNA</span><span class="p">):</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">segmento_DNA</span><span class="p">:</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">cont</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1">#Otra opción: </span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">longitud</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">segmento_DNA</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">longitud</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">longitud_cadena</span><span class="p">(</span><span class="n">segmento_DNA</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1">#Otra opción: </span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">longitud</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">segmento_DNA</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">longitud</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 </details>
@@ -652,7 +655,8 @@
 </td></tr></table>
 </details>
 <h3 id="ejercicio-3"><strong>Ejercicio 3</strong></h3>
-<p>Determine el porcentaje de guanina/citosina (GC) en un fragmento de ADN almacenado como cadena.</p>
+<p>Determine el porcentaje de guanina-citosina (GC) 
+en un fragmento de ADN almacenado como cadena.</p>
 <p><em>Se propone de ejemplo el siguiente fragmento de ADN: AGGCGCGTTGTGATGGTCGTAGCT</em></p>
 <details class="success">
 <summary>Respuesta</summary>
